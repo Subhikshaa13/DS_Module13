@@ -1,19 +1,22 @@
-Ex2 Conversion of the infix expression into postfix expression
-DATE:29-4-2025
-AIM:
+# Ex2 Conversion of the infix expression into postfix expression
+## DATE:30-4-2025
+## AIM:
 To write a C program to convert the infix expression into postfix form using stack by following the operator precedence and associative rule.
 
-Algorithm
-Start the program.
-Initialize a stack and set the top index to -1.
-Define the push() and pop() functions to add and remove elements from the stack.
-Define the priority() function to assign priorities to operators.
-Traverse the expression in the IntoPost() function, handling operands, parentheses, and operators.
-After processing the expression, pop and print any remaining operators from the stack.
-End.
-Program:
-Program to convert the infix expression into postfix expression
+## Algorithm
+1. Start the program.
+2. Initialize a stack and set the top index to -1. 
+3. Define the push() and pop() functions to add and remove elements from the stack. 
+4. Define the priority() function to assign priorities to operators. 
+5. Traverse the expression in the IntoPost() function, handling operands, parentheses, and 
+operators. 
+6. After processing the expression, pop and print any remaining operators from the stack. 
+7. End.  
+
+## Program:
 ```
+Program to convert the infix expression into postfix expression
+
 #include<stdio.h> 
 #include<ctype.h> 
  
@@ -92,10 +95,13 @@ char exp[100]="3%2+4*(A&B)";
 IntoPost(exp); 
 return 1; 
 } 
+
 ```
-Output:
-![image](https://github.com/user-attachments/assets/bd8ee92b-d92a-42ef-85f0-cc0fc982b7f8)
+
+## Output:
+
+![image](https://github.com/user-attachments/assets/2257fdba-addf-4cdc-b5ad-ddcc31aea8fb)
 
 
-Result:
+## Result:
 Thus, the C program to convert the infix expression into postfix form using stack by following the operator precedence and associative rule is implemented successfully.
